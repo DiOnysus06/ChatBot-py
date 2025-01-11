@@ -1,4 +1,4 @@
-# ChatGPT Python Script
+# ChatGPT chat Model Python Script
 
 This Python script is a simple chatbot using the **OpenAI GPT-3.5-turbo model**. It allows users to input text in a continuous loop, send queries to OpenAI's API, and receive responses from the model. The loop continues until the user types "exit."
 
@@ -7,6 +7,7 @@ This Python script is a simple chatbot using the **OpenAI GPT-3.5-turbo model**.
 Before running the script, ensure you have the following installed:
 
 ### Python Libraries:
+
 - `openai`: To interact with OpenAI's GPT-3.5-turbo API.
 
 To install the `openai` package, use the following command:
@@ -18,6 +19,7 @@ pip install openai
 ## How to Set Up
 
 1. **Get an API Key**:
+
    - Sign up for an account on [OpenAI](https://platform.openai.com/).
    - Navigate to the [API Keys page](https://platform.openai.com/account/api-keys) and create a new API key.
    - Replace the placeholder `'YOUR_API_KEY'` in the code with your actual API key:
@@ -35,6 +37,7 @@ pip install openai
 ## Usage
 
 ### How It Works:
+
 - The script sets up a continuous loop where the user can enter text-based queries.
 - Each user message is appended to the `messages` list with the role `"user"`.
 - The script sends the user's input to the OpenAI API using the `openai.ChatCompletion.create` method.
@@ -42,10 +45,12 @@ pip install openai
 - The conversation history is maintained to provide context to the model for future messages.
 
 ### Exit Condition:
+
 - To stop the conversation, type `exit`.
 - The script will respond with "Goodbye!" and terminate the loop.
 
 ### Example Interaction:
+
 ```
 User: Hello
 ChatGPT: Hi! How can I assist you today?
